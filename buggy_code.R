@@ -6,7 +6,7 @@ investment_value<-function(x,y,z=0.95, different_years=c(3,5)){
   different_multiplier = 1 + z
   for(i in 1:10){
     if (!(i %in% different_years)){      # should be true unless i is in the different_years vector
-      x<-beginning_x*multiplier
+      x<-x*multiplier
     } else {
       # In the different years we had a recession
       x<-x*.96
