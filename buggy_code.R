@@ -4,7 +4,6 @@ investment_value<-function(x,y,z=0.95, different_years=c(3,5)){
   # years 3 and 5, there is a different growth rate of z.
   multiplier = 1 + y
   different_multiplier = 1 + z
-  beginning_x=x
   for(i in 1:10){
     if (!(i %in% different_years)){      # should be true unless i is in the different_years vector
       x<-beginning_x*multiplier
