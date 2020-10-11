@@ -9,7 +9,7 @@ investment_value<-function(x,y,z=0.95, different_years=c(3,5)){
       x<-x*multiplier
     } else {
       # In the different years we had a recession
-      x<-x*.96
+      x<-x*different_multiplier
     }
   }
   return(x)
